@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "Rentals";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 style=" color: #000000; background-color: white; ">Rentals</h2>
+<div class="box">
+<div class="row">
+    <div class="col-md-4">
+        <a href='@Url.Action("Instrument", "Home", new { name = "clarinet" })'>
+            <p>Clarinet</p>
+            <img width="304" height="236" src="~/Content/Images/clarinet.jpe" />
+        </a>
+    </div>
+    <div class="col-md-4">
+        <a href='@Url.Action("Instrument", "Home", new { name = "flute" })'>
+            <p>Flute</p>
+            <img width="304" height="236" src="~/Content/Images/flute.jpg" />
+            </a>
+</div>
+    <div class="col-md-4">
+        <a href='@Url.Action("Instrument", "Home", new { name = "saxophone" })'>
+            <p>Saxophone</p>
+            <img width="304" height="236" src="~/Content/Images/saxophone.jpe" />
+            </a>
+</div>
+
+</div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <a href='@Url.Action("Instrument", "Home", new { name = "trombone" })'>
+                <p>Trombone</p>
+                <img width="304" height="236" src="~/Content/Images/Trombone.jpg" />
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href='@Url.Action("Instrument", "Home", new { name = "trumpet" })'>
+                <p>Trumpet</p>
+                <img width="304" height="236" src="~/Content/Images/trumpet.jpg" />
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href='@Url.Action("Instrument", "Home", new { name = "tuba" })'>
+                <p>Tuba</p>
+                <img width="304" height="236" src="~/Content/Images/Tuba.jpg" />
+            </a>
+        </div>
+    </div>
+</div>
